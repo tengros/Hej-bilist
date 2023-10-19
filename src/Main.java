@@ -6,8 +6,8 @@ public class Main {
         Vehicle v2 = new MilitaryTank(); // Prints “Tank created. 2000 miles to go! GO GO GO!”
 
         v1.drive();        // Prints “Car didn’t drive - there’s no driver!”
-        v2.drive();    // Prints “Tank didn’t drive - there’s no driver!”
         v1.setDriver(d1);    // Prints “Driver not changed! Emil is 17, but must be 18 or older to drive car”
+        v2.drive();    // Prints “Tank didn’t drive - there’s no driver!”
         v1.setDriver(d2);    // Prints “Driver changed to Niklas”
         v2.setDriver(d2);    // Prints “Driver not changed! Niklas is 21, but must be 25 or older to drive tank”
         v2.setDriver(new Driver("TankMan", 300)); // Prints “Driver changed to TankMan”
