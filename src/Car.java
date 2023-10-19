@@ -13,7 +13,7 @@ public class Car extends Vehicle {
 
     protected void setDriver(Driver driver) {
         if (driver.age < 18) {
-            System.out.println("Driver not changed! " + driver.name + " is " + driver.age + ", but must be 18 or older to drive car");
+            System.out.println("Driver not changed! " + driver.name + " is " + driver.age + ", but must be 18 or older to drive car! Are you crazy?");
         } else {
             super.setDriver(driver);
             System.out.println("Driver changed to " + driver.name);
@@ -26,9 +26,9 @@ public class Car extends Vehicle {
         if (Objects.isNull(currentDriver)) {
             System.out.println("Car didn’t drive - there’s no driver!");
         } else {
-            currentMiles = (miles - 10);
+            currentMiles = (miles - 7);
             miles = currentMiles;
-            System.out.println("Car drove 10 miles - " + currentMiles + " miles to go");
+            System.out.println("Car drove 7 miles - " + currentMiles + " miles to go");
         }
 
     }
